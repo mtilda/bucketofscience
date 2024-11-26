@@ -1,8 +1,10 @@
-# Data Science Tools
+# Open Data Science
 
-Open source tools for data scientists.
+Open source data science things.
 
 ## Python virtual environment
+
+### Setup
 
 To setup your Python environment, run:
 
