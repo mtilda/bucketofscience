@@ -30,35 +30,43 @@ deactivate
 
 ### Install packages
 
-To install a new package, run:
+To install the packages defined in the [requirements.txt](requirements.txt) file, run:
+
+```bash
+make install
+```
+
+To install a new package, [activate the virtual environment](#activate-the-environment) and run:
 
 ```bash
 pip install <package>
 ```
 
-Then to overwrite the requirements.txt file with your current environment, run:
+Then to overwrite the [requirements.txt](requirements.txt) file with your current environment, run:
 
 ```bash
-make -B requirements.txt
+rm requirements.txt
+make requirements.txt
 ```
 
 ### Remove packages
 
-To remove a package, run:
+To remove a package, [activate the virtual environment](#activate-the-environment) and run:
 
 ```bash
 pip uninstall <package>
 ```
 
-Then to overwrite the requirements.txt file with your current environment, run:
+Then to overwrite the [requirements.txt](requirements.txt) file with your current environment, run:
 
 ```bash
-make -B requirements.txt
+rm requirements.txt
+make requirements.txt
 ```
 
 ### Reset packages
 
-To reset the requirements.txt file, run:
+To reset the [requirements.txt](requirements.txt) file, run:
 
 ```bash
 git reset HEAD requirements.txt
@@ -67,7 +75,8 @@ git reset HEAD requirements.txt
 Then to reset the environment, run:
 
 ```bash
-make -B .venv
+rm .venv
+make .venv
 ```
 
 ## Jupyter Notebooks
