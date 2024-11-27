@@ -1,4 +1,4 @@
-# Open Data Science
+# Bucket of Science
 
 Open source data science things.
 
