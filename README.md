@@ -6,13 +6,13 @@ Open source data science things.
 
 ### Setup
 
-To setup your Python environment, run:
+To setup your Python virtual environment, run:
 
 ```bash
 make
 ```
 
-### Activate the environment
+### Activate
 
 To activate the environment, run:
 
@@ -20,7 +20,7 @@ To activate the environment, run:
 source .venv/bin/activate
 ```
 
-### Deactivate the environment
+### Deactivate
 
 To deactivate the environment, run:
 
@@ -36,7 +36,7 @@ To install the packages defined in the [requirements.txt](requirements.txt) file
 make install
 ```
 
-To install a new package, [activate the virtual environment](#activate-the-environment) and run:
+To install a new package, [activate the environment](#activate-the-environment) and run:
 
 ```bash
 pip install <package>
@@ -51,7 +51,7 @@ make requirements.txt
 
 ### Remove packages
 
-To remove a package, [activate the virtual environment](#activate-the-environment) and run:
+To remove a package, [activate the environment](#activate-the-environment) and run:
 
 ```bash
 pip uninstall <package>
