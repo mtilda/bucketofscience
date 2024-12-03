@@ -7,6 +7,6 @@
 install: .venv
 	.venv/bin/pip install -r requirements.txt
 
-requirements.txt: .venv
+requirements.txt:
 	rm requirements.txt || true
 	.venv/bin/pip freeze > requirements.txt
